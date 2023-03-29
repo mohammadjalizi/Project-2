@@ -69,7 +69,7 @@ const Appbarr = () => {
        
         //   id={mobileMenuId}
         
-       open={true}
+       open={shownobile}
         //   open={isMobileMenuOpen}
         //   onClose={handleMobileMenuClose}
         >
@@ -83,7 +83,7 @@ const Appbarr = () => {
           </MenuItem>
           <MenuItem>
             <IconButton
-            ref={menumobile}
+         
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"
@@ -106,6 +106,7 @@ const Appbarr = () => {
               aria-controls="primary-search-account-menu"
               aria-haspopup="true"
               color="inherit"
+        
             >
               <AccountCircle />
             </IconButton>
@@ -174,10 +175,15 @@ const Appbarr = () => {
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
+               ref={menumobile}
+             
               size="large"
               aria-label="show more"
         
               aria-haspopup="true"
+              onClick={()=>{
+                Setshowmobile(!shownobile)
+                               }}
             //   onClick={handleMobileMenuOpen}
               color="inherit"
             >
