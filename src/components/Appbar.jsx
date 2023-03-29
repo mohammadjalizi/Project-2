@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -58,35 +58,18 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   }));
   
-  const StyledInputBase = styled(InputBase)(({ theme }) => ({
-    color: 'inherit',
-    '& .MuiInputBase-input': {
-      padding: theme.spacing(1, 1, 1, 0),
-      // vertical padding + font size from searchIcon
-      paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-      transition: theme.transitions.create('width'),
-      width: '100%',
-      [theme.breakpoints.up('md')]: {
-        width: '20ch',
-      },
-    },
-  }));
+
 
 const Appbarr = () => {
     const menumobile=useRef(null)
+    const[shownobile,Setshowmobile]=useState(false)
     const renderMobileMenu = (
         <Menu
           anchorEl={menumobile.current}
-          anchorOrigin={{
-            vertical: 'top',
-            horizontal: 'right',
-          }}
+       
         //   id={mobileMenuId}
-          keepMounted
-          transformOrigin={{
-            vertical: 'top',
-            horizontal: 'right',
-          }}
+        
+       open={true}
         //   open={isMobileMenuOpen}
         //   onClose={handleMobileMenuClose}
         >
