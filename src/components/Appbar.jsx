@@ -79,7 +79,7 @@ const Appbarr = () => {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+       mohammadjalizi
           </Typography>
           <Search>
             <SearchIconWrapper>
@@ -122,9 +122,9 @@ const Appbarr = () => {
             <IconButton
               size="large"
               aria-label="show more"
-              aria-controls={mobileMenuId}
+        
               aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
+            //   onClick={handleMobileMenuOpen}
               color="inherit"
             >
               <MoreIcon />
