@@ -57,13 +57,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
       },
     },
   }));
-  
 
 
 const Appbarr = () => {
     const menumobile=useRef(null)
     const[shownobile,Setshowmobile]=useState(false)
-    const renderMobileMenu = (
+      
+  const renderMobileMenu = (
         <Menu
           anchorEl={menumobile.current}
        
@@ -71,7 +71,10 @@ const Appbarr = () => {
         
        open={shownobile}
         //   open={isMobileMenuOpen}
-        //   onClose={handleMobileMenuClose}
+          onClose={()=>{
+Setshowmobile(false)
+
+          }}
         >
           <MenuItem>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
