@@ -1,6 +1,6 @@
 // @ts-ignore
 
-import { createTheme, Button } from "@mui/material";
+import { createTheme, Button, ThemeProvider, CssBaseline } from "@mui/material";
 import getDesignTokens from "mystyle/Mytheme";
 import { useMemo, useState } from "react";
 
@@ -14,6 +14,9 @@ function App() {
   );
   const theme = useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
   return (
+    <ThemeProvider theme={theme}>
+    <CssBaseline />
+
     <div>
  <Button    onClick={() => {
           localStorage.setItem(
@@ -26,6 +29,7 @@ function App() {
    chanch mod
  </Button>
     </div>
+    </ThemeProvider>
   );
 }
 
