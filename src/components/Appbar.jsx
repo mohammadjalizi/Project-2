@@ -61,26 +61,23 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 const Appbarr = () => {
     const menumobile=useRef(null)
-    const[shownobilebigger,Setshowmobilebigger]=useState(false)
-    const menumobile=useRef(null)
-    const[shownobilebigger,Setshowmobilebigger]=useState(false)
+    const[shownobile,Setshowmobile]=useState(false)
+
+
+    const menumobileBiggscreen=useRef(null)
+    const[shownobileBiggscreen,SetshowmobileBiggscreen]=useState(false)
 
 
     const renderMenu = (
         <Menu
-          anchorEl={anchorEl}
-          anchorOrigin={{
-            vertical: 'top',
-            horizontal: 'right',
+          anchorEl={menumobileBiggscreen.current}
+     
+    
+          open={shownobileBiggscreen}
+          onClose={()=>{
+SetshowmobileBiggscreen(false)
+
           }}
-          id={menuId}
-          keepMounted
-          transformOrigin={{
-            vertical: 'top',
-            horizontal: 'right',
-          }}
-          open={isMenuOpen}
-          onClose={handleMenuClose}
         >
           <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
           <MenuItem onClick={handleMenuClose}>My account</MenuItem>
