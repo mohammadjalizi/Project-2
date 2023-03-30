@@ -2,14 +2,18 @@
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
 import InboxIcon from '@mui/icons-material/Inbox';
 import React from 'react'
-import { Home } from '@mui/icons-material';
+import { AccountBox, Article, Group, Home, Person, Settings, Storefront } from '@mui/icons-material';
 
 const MyList = () => {
   const mylist=[
 
-    {title:"Home",icon:<Home/>},
-    {title:"dddd"}
-
+    { title: "Homepage", icon: <Home /> },
+    { title: "Pages", icon: <Article /> },
+    { title: "Groups", icon: <Group /> },
+    { title: "Marketplace", icon: <Storefront /> },
+    { title: "Friends", icon: <Person /> },
+    { title: "Settings", icon: <Settings /> },
+    { title: "Profile", icon: <AccountBox /> },
 
   ]
   return (
