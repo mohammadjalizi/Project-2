@@ -94,12 +94,9 @@ const MyList = ({setmyMOde,theme}) => {
             
           );
         })}
-        <ListItem>
+        <ListItem disablePadding>
         <ListItemIcon>
    
-          {  theme.palette.mode==="dark" ?        <DarkMode /> :<LightMode/>}
-        </ListItemIcon>
-        <ListItemText  primary={  theme.palette.mode} />
         {<MaterialUISwitch 
         
         onChange={()=>{
@@ -113,6 +110,9 @@ const MyList = ({setmyMOde,theme}) => {
         }}
        sx={{ m: 1 }} defaultChecked />} 
      
+        </ListItemIcon>
+        <ListItemText  primary={  theme.palette.mode} />
+      
       </ListItem>
 
       </List>
