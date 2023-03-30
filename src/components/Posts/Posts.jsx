@@ -14,8 +14,13 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { Box } from '@mui/material';
 const Posts = () => {
   return (
+    <Box sx={{flexGrow:"3"}}>
+
+
+   
     <Card sx={{ maxWidth: 345 }}>
     <CardHeader
       avatar={
@@ -55,6 +60,7 @@ const Posts = () => {
     </CardActions>
    
   </Card>
+  </Box>
   )
 }
 
