@@ -1,14 +1,15 @@
+import { Inbox } from '@mui/icons-material'
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
 import React from 'react'
 
-const myList = () => {
+const MyList = () => {
   return (
    <Box sx={{flexGrow:"1.1"}}>
    <List>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <InboxIcon />
+                <Inbox />
               </ListItemIcon>
               <ListItemText primary="Inbox" />
             </ListItemButton>
@@ -28,4 +29,4 @@ const myList = () => {
   )
 }
 
-export default myList
+export default MyList

@@ -2,7 +2,7 @@
 
 import { createTheme, Button, ThemeProvider, CssBaseline, Typography, Stack } from "@mui/material";
 import AppBarr from "components/Appbar";
-
+import myList from "components/list/Mylist";
 import getDesignTokens from "mystyle/Mytheme";
 import { useMemo, useState } from "react";
 
@@ -33,9 +33,7 @@ function App() {
  <br/>
  <br/>
 <Stack>    
- <Typography variant="body1" > box1 </Typography>
- <Typography variant="body1" > box2 </Typography>
- <Typography variant="body1" > box3 </Typography>
+<myList/>
  </Stack>
     </div>
     </ThemeProvider>
