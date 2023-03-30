@@ -16,16 +16,47 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { Box } from '@mui/material';
 const Posts = () => {
+    const myCards = [
+        {
+          letter: "K",
+          color: "royalblue",
+          userName: "Ali Hassan",
+          imgLink:
+            "https://images.pexels.com/photos/3480792/pexels-photo-3480792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        },
+        {
+          letter: "A",
+          color: "purple",
+          userName: "do3aa Hassan",
+          imgLink:
+            "https://images.pexels.com/photos/1549280/pexels-photo-1549280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        },
+        {
+          letter: "N",
+          color: "teal",
+          userName: "Alaa Hassan",
+          imgLink:
+            "https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&w=600",
+        },
+        {
+          letter: "M",
+          color: "royalblue",
+          userName: "Walaa Hassan",
+          imgLink:
+            "https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&w=600",
+        },
+      ];    
   return (
     <Box sx={{flexGrow:"3"}}>
 
 
-   
+   {myCards.map(item=>{
+return(
     <Card sx={{ maxWidth: 345,mx:"auto" }}>
     <CardHeader
       avatar={
-        <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-          R
+        <Avatar sx={{ bgcolor: item.color }} aria-label="recipe">
+        {item.letter}
         </Avatar>
       }
       action={
@@ -33,7 +64,7 @@ const Posts = () => {
           <MoreVertIcon />
         </IconButton>
       }
-      title="Shrimp and Chorizo Paella"
+      title={item.userName}
       subheader="September 14, 2016"
     />
     <CardMedia
@@ -60,6 +91,11 @@ const Posts = () => {
     </CardActions>
    
   </Card>
+
+)
+
+   })}
+  
   </Box>
   )
 }
