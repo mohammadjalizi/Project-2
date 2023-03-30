@@ -6,12 +6,14 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Switch,
 } from "@mui/material";
 
 import React from "react";
 import {
   AccountBox,
   Article,
+  DarkMode,
   Group,
   Home,
   Person,
@@ -40,18 +42,32 @@ const MyList = ({setmyMOde,theme}) => {
                 <ListItemText primary={item.title} />
               </ListItemButton>
             </ListItem>
+            
           );
         })}
-         <Button onClick={() => {
-          localStorage.setItem(
-            "currentMode",
-            theme.palette.mode === "dark" ? "light" : "dark"
-          );
+        <ListItem>
+        <ListItemIcon>
+          <DarkMode />
+        </ListItemIcon>
+        <ListItemText id="switch-list-label-wifi" primary="Wi-Fi" />
+        <Switch
+          edge="end"
+          onChange={()=>{
+            localStorage.setItem(
+              "currentMode",
+              theme.palette.mode === "dark" ? "light" : "dark"
+            );
+  
+            setmyMOde(theme.palette.mode === "light" ? "dark" : "light"); 
 
-          setmyMOde(theme.palette.mode === "light" ? "dark" : "light");
-        }}  variant="text">
-   chanch mod
- </Button>
+          }}
+          checked={checked.indexOf('wifi') !== -1}
+          inputProps={{
+            'aria-labelledby': 'switch-list-label-wifi',
+          }}
+        />
+      </ListItem>
+
       </List>
     </Box>
   );
