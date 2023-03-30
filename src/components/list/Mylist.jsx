@@ -16,6 +16,7 @@ import {
   DarkMode,
   Group,
   Home,
+  LightMode,
   Person,
   Settings,
   Storefront,
@@ -47,7 +48,8 @@ const MyList = ({setmyMOde,theme}) => {
         })}
         <ListItem>
         <ListItemIcon>
-          <DarkMode />
+   
+          {  theme.palette.mode==="dark" ?        <DarkMode /> :<LightMode/>}
         </ListItemIcon>
         <ListItemText  primary={  theme.palette.mode} />
         <Switch
