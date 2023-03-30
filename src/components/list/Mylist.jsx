@@ -30,7 +30,7 @@ const MyList = ({setmyMOde,theme}) => {
     { title: "Profile", icon: <AccountBox /> },
   ];
   return (
-    <Box sx={{ flexGrow: "1.1" ,display:{xs:"none"}  }}>
+    <Box sx={{ flexGrow: "1.1" ,display:{xs:"none",md:"block"}  }}>
       <List sx={{position:"fixed"}}>
         {mylist.map((item) => {
           return (
