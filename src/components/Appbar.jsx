@@ -180,7 +180,7 @@ const AppBarr = () => {
               color="inherit"
             >
               <Badge badgeContent={4} color="error">
-                <MailIcon />
+                <MailIcon sx={{width: "37px", height: "37px"}}  />
               </Badge>
             </IconButton>
             <IconButton
@@ -189,7 +189,7 @@ const AppBarr = () => {
               color="inherit"
             >
               <Badge badgeContent={17} color="error">
-                <NotificationsIcon />
+                <NotificationsIcon sx={{width: "37px", height: "37px"}}  />
               </Badge>
             </IconButton>
           
