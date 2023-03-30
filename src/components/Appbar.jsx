@@ -138,7 +138,7 @@ const AppBarr = () => {
   );
 
   return (
-    <Box>
+
       <AppBar position="sticky">
         <Toolbar>
           <IconButton
@@ -226,11 +226,12 @@ const AppBarr = () => {
             </IconButton>
           </Box>
         </Toolbar>
+        {renderMobileMenu}
+      {renderMenu}
       </AppBar>
 
-      {renderMobileMenu}
-      {renderMenu}
-    </Box>
+   
+  
   );
 };
 
