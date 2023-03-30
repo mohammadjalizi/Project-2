@@ -20,14 +20,14 @@ const Posts = () => {
         {
           letter: "K",
           color: "royalblue",
-          userName: "Ali Hassan",
+          userName: "mohammadjalizi",
           imgLink:
             "https://images.pexels.com/photos/3480792/pexels-photo-3480792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         },
         {
           letter: "A",
           color: "purple",
-          userName: "do3aa Hassan",
+          userName: "Ali Hassan",
           imgLink:
             "https://images.pexels.com/photos/1549280/pexels-photo-1549280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         },
