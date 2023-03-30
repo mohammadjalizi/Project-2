@@ -70,7 +70,7 @@ return(
     <CardMedia
       component="img"
       height="194"
-      image="/static/images/cards/paella.jpg"
+      image={item.imgLink}
       alt="Paella dish"
     />
     <CardContent>
