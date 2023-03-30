@@ -21,7 +21,7 @@ const Posts = () => {
 
 
    
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345,mx:"auto" }}>
     <CardHeader
       avatar={
         <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
