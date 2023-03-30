@@ -52,7 +52,7 @@ const Posts = () => {
 
    {myCards.map(item=>{
 return(
-    <Card sx={{ maxWidth: 345,mx:"auto" }}>
+    <Card sx={{ maxWidth: 444,mx:"auto" }}>
     <CardHeader
       avatar={
         <Avatar sx={{ bgcolor: item.color }} aria-label="recipe">
