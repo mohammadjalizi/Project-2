@@ -172,24 +172,26 @@ const AppBarr = () => {
 
           <Box sx={{ flexGrow: 1 }} />
 
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+          <Box sx={{    alignItems:"center",  display: { xs: "none", md: "flex" } }}>
           
             <IconButton
+             sx={{width: "37px", height: "37px"}} 
               size="large"
               aria-label="show 4 new mails"
               color="inherit"
             >
               <Badge badgeContent={4} color="error">
-                <MailIcon sx={{width: "37px", height: "37px"}}  />
+                <MailIcon />
               </Badge>
             </IconButton>
             <IconButton
+            sx={{width: "37px", height: "37px"}} 
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"
             >
               <Badge badgeContent={17} color="error">
-                <NotificationsIcon sx={{width: "37px", height: "37px"}}  />
+                <NotificationsIcon  />
               </Badge>
             </IconButton>
           
