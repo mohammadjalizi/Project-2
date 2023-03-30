@@ -3,6 +3,7 @@
 import { createTheme, Button, ThemeProvider, CssBaseline, Typography, Stack } from "@mui/material";
 import AppBarr from "components/Appbar";
 import MyList from "components/list/Mylist";
+import Posts from "components/Posts/Posts";
 
 import getDesignTokens from "mystyle/Mytheme";
 import { useMemo, useState } from "react";
@@ -25,7 +26,7 @@ function App() {
 
 <Stack direction="row">    
 <MyList setmyMOde={setmyMOde} theme={theme}/>
-<Typography  sx={{flexGrow:"3",height:"1111px"}} variant="body1">111</Typography>
+<Posts/>
 <Typography sx={{flexGrow:"2"}} variant="body1">112</Typography>
  </Stack>
     </div>
