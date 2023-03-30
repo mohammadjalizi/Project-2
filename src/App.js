@@ -1,6 +1,6 @@
 // @ts-ignore
 
-import { createTheme, Button, ThemeProvider, CssBaseline } from "@mui/material";
+import { createTheme, Button, ThemeProvider, CssBaseline, Typography, Stack } from "@mui/material";
 import AppBarr from "components/Appbar";
 
 import getDesignTokens from "mystyle/Mytheme";
@@ -30,6 +30,13 @@ function App() {
         }}  variant="text">
    chanch mod
  </Button>
+ <br/>
+ <br/>
+<Stack>    
+ <Typography variant="body1" > box1 </Typography>
+ <Typography variant="body1" > box2 </Typography>
+ <Typography variant="body1" > box3 </Typography>
+ </Stack>
     </div>
     </ThemeProvider>
   );
