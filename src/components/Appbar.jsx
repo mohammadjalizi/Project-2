@@ -16,6 +16,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import { Avatar } from "@mui/material";
+import img from '../components/img/me.jpg'
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -204,7 +205,7 @@ const AppBarr = () => {
               }}
               color="inherit"
             >
-              <Avatar sx={{width: "37px", height: "37px"}} src="./imges/Ali Hassan.JPG" />
+              <Avatar sx={{width: "37px", height: "37px"}} src={img} />
             </IconButton>
           </Box>
 
