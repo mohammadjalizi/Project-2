@@ -3,7 +3,7 @@ import React from 'react'
 
 const myList = () => {
   return (
-   <Box>
+   <Box sx={{flexGrow:"1.1"}}>
    <List>
           <ListItem disablePadding>
             <ListItemButton>
