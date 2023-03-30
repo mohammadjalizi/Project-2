@@ -17,7 +17,7 @@ const MyList = () => {
 
     {mylist.map(item=>{
 return(
-  <ListItem disablePadding>
+  <ListItem  key={item.title}  disablePadding>
   <ListItemButton>
     <ListItemIcon>
       <InboxIcon />
