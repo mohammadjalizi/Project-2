@@ -2,7 +2,8 @@
 
 import { createTheme, Button, ThemeProvider, CssBaseline, Typography, Stack } from "@mui/material";
 import AppBarr from "components/Appbar";
-import myList from "components/list/Mylist";
+import MyList from "components/list/Mylist";
+
 import getDesignTokens from "mystyle/Mytheme";
 import { useMemo, useState } from "react";
 
@@ -32,8 +33,10 @@ function App() {
  </Button>
  <br/>
  <br/>
-<Stack>    
-<myList/>
+<Stack direction="row">    
+<MyList/>
+<Typography  sx={{flexGrow:"3"}} variant="body1" color="initial">111</Typography>
+<Typography sx={{flexGrow:"2"}} variant="body1">112</Typography>
  </Stack>
     </div>
     </ThemeProvider>
