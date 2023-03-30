@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -46,6 +46,37 @@ const Posts = () => {
             "https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&w=600",
         },
       ];    
+      const refMenuMobile = useRef(null);
+      const [showMobileMenu, setshowMobileMenu] = useState(false);
+    
+      const refMenuBiggerScreen = useRef(null);
+      const [showBiggerScreenMenu, setshowBiggerScreenMenu] = useState(false);
+    
+      const renderMenu = (
+        <Menu
+          anchorEl={refMenuBiggerScreen.current}
+          open={showBiggerScreenMenu}
+          onClose={() => {
+            setshowBiggerScreenMenu(false);
+          }}
+        >
+          <MenuItem
+            onClick={() => {
+              setshowBiggerScreenMenu(false);
+            }}
+          >
+            Profile
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
+              setshowBiggerScreenMenu(false);
+            }}
+          >
+            My account
+          </MenuItem>
+        </Menu>
+      );
+    
   return (
     <Box sx={{flexGrow:"3"}}>
 
