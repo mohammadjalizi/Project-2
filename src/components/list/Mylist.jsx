@@ -30,8 +30,8 @@ const MyList = ({setmyMOde,theme}) => {
     { title: "Profile", icon: <AccountBox /> },
   ];
   return (
-    <Box sx={{ flexGrow: "1.1" }}>
-      <List>
+    <Box sx={{ flexGrow: "1.1" ,display:{xs:"none"}  }}>
+      <List sx={{position:"fixed"}}>
         {mylist.map((item) => {
           return (
             <ListItem key={item.title} disablePadding>
