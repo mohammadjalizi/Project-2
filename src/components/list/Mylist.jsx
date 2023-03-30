@@ -2,11 +2,12 @@
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
 import InboxIcon from '@mui/icons-material/Inbox';
 import React from 'react'
+import { Home } from '@mui/icons-material';
 
 const MyList = () => {
   const mylist=[
 
-    {title:"ddd"},
+    {title:"Home",icon:<Home/>},
     {title:"dddd"}
 
 
@@ -20,9 +21,9 @@ return(
   <ListItem  key={item.title}  disablePadding>
   <ListItemButton>
     <ListItemIcon>
-      <InboxIcon />
+{item.icon}
     </ListItemIcon>
-    <ListItemText primary="Inbox" />
+    <ListItemText primary={item.title} />
   </ListItemButton>
 </ListItem>
 
