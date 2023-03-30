@@ -49,7 +49,7 @@ const MyList = ({setmyMOde,theme}) => {
         <ListItemIcon>
           <DarkMode />
         </ListItemIcon>
-        <ListItemText id="switch-list-label-wifi" primary="Wi-Fi" />
+        <ListItemText  primary={  theme.palette.mode} />
         <Switch
           edge="end"
           onChange={()=>{
@@ -61,7 +61,7 @@ const MyList = ({setmyMOde,theme}) => {
             setmyMOde(theme.palette.mode === "light" ? "dark" : "light"); 
 
           }}
-          checked={checked.indexOf('wifi') !== -1}
+         
           inputProps={{
             'aria-labelledby': 'switch-list-label-wifi',
           }}
