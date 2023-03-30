@@ -1,7 +1,8 @@
 // @ts-ignore
 
 import { createTheme, Button, ThemeProvider, CssBaseline } from "@mui/material";
-import Appbarr from "components/Appbar";
+import AppBarr from "components/Appbar";
+
 import getDesignTokens from "mystyle/Mytheme";
 import { useMemo, useState } from "react";
 
@@ -17,7 +18,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <CssBaseline />
-<Appbarr/>
+<AppBarr/>
     <div>
  <Button    onClick={() => {
           localStorage.setItem(
