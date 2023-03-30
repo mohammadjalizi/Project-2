@@ -21,20 +21,11 @@ function App() {
     <CssBaseline />
 <AppBarr/>
     <div>
- <Button    onClick={() => {
-          localStorage.setItem(
-            "currentMode",
-            theme.palette.mode === "dark" ? "light" : "dark"
-          );
 
-          setmyMOde(theme.palette.mode === "light" ? "dark" : "light");
-        }}  variant="text">
-   chanch mod
- </Button>
  <br/>
  <br/>
 <Stack direction="row">    
-<MyList/>
+<MyList setmyMOde={setmyMOde} theme={theme}/>
 <Typography  sx={{flexGrow:"3"}} variant="body1" color="initial">111</Typography>
 <Typography sx={{flexGrow:"2"}} variant="body1">112</Typography>
  </Stack>
