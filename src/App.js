@@ -26,7 +26,7 @@ function App() {
  <br/>
 <Stack direction="row">    
 <MyList setmyMOde={setmyMOde} theme={theme}/>
-<Typography  sx={{flexGrow:"3"}} variant="body1" color="initial">111</Typography>
+<Typography  sx={{flexGrow:"3"}} variant="body1">111</Typography>
 <Typography sx={{flexGrow:"2"}} variant="body1">112</Typography>
  </Stack>
     </div>

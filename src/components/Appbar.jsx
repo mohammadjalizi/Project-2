@@ -139,7 +139,7 @@ const AppBarr = () => {
 
   return (
     <Box>
-      <AppBar position="static">
+      <AppBar position="sticky">
         <Toolbar>
           <IconButton
             size="large"
