@@ -22,8 +22,7 @@ function App() {
 <AppBarr/>
     <div>
 
- <br/>
- <br/>
+
 <Stack direction="row">    
 <MyList setmyMOde={setmyMOde} theme={theme}/>
 <Typography  sx={{flexGrow:"3",height:"1111px"}} variant="body1">111</Typography>
