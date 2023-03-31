@@ -9,7 +9,10 @@ const Addpost = () => {
   return (
     <>       
     <Tooltip title="Add Post" sx={{position:"fixed",left:"22px",bottom:"22px"}}>   
-    <Fab color="primary" aria-label="add">
+    <Fab onClick={()=>{
+
+        setIsopen(true)
+    }} color="primary" aria-label="add">
     <AddIcon />
   </Fab>
   </Tooltip>
