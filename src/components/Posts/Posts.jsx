@@ -14,7 +14,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { Box } from '@mui/material';
+import { Box, Menu, MenuItem } from '@mui/material';
 const Posts = () => {
     const myCards = [
         {
@@ -46,8 +46,8 @@ const Posts = () => {
             "https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&w=600",
         },
       ];    
-      const refMenuMobile = useRef(null);
-      const [showMobileMenu, setshowMobileMenu] = useState(false);
+      const element = useRef(null);
+      const [cardmenu, setcardmenu] = useState(false);
     
       const refMenuBiggerScreen = useRef(null);
       const [showBiggerScreenMenu, setshowBiggerScreenMenu] = useState(false);
