@@ -46,36 +46,48 @@ const Posts = () => {
             "https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&w=600",
         },
       ];    
-      const [anchorEl, setAnchorEl] = React.useState(null);
+      const [anchorEl, setAnchorEl] = useState(null);
       const [cardmenu, setcardmenu] = useState(false);
     
       const refMenuBiggerScreen = useRef(null);
-      const [showBiggerScreenMenu, setshowBiggerScreenMenu] = useState(false);
+      const [showBiggerScreenMenu, setscardmenu] = useState(false);
     
+
+
       const renderMenu = (
         <Menu
           anchorEl={refMenuBiggerScreen.current}
           open={showBiggerScreenMenu}
           onClose={() => {
-            setshowBiggerScreenMenu(false);
+            setcardmenu(false);
           }}
         >
           <MenuItem
             onClick={() => {
-              setshowBiggerScreenMenu(false);
+              setcardmenu(false);
             }}
           >
             Profile
           </MenuItem>
           <MenuItem
             onClick={() => {
-              setshowBiggerScreenMenu(false);
+              setcardmenu(false);
             }}
           >
             My account
           </MenuItem>
         </Menu>
       );
+      const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+setcardmenu(true)
+      };
+      const handleClose = () => {
+        setAnchorEl(null);
+
+      };
+    
+    
     
   return (
     <Box sx={{flexGrow:"3"}}>
@@ -91,10 +103,10 @@ return(
         </Avatar>
       }
       action={
-        <IconButton onClick={()=>{
-          setshowBiggerScreenMenu(true)
+        <IconButton onClick={(eo)=>{
+        handleClick()
 
-        }}   ref={element}   aria-label="settings">
+        }}   aria-label="settings">
           <MoreVertIcon />
         </IconButton>
       }
