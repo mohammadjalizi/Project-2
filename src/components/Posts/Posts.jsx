@@ -71,7 +71,7 @@ const Posts = () => {
           </MenuItem>
           <MenuItem
             onClick={() => {
-              setcardmenu(false);
+                (false);
             }}
           >
             My account
@@ -128,7 +128,7 @@ return(
     </CardContent>
     <CardActions disableSpacing>
       <IconButton aria-label="add to favorites">
-        <FavoriteIcon />
+      <Checkbox {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
       </IconButton>
       <IconButton aria-label="share">
         <ShareIcon />
