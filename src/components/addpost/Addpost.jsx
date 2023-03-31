@@ -1,9 +1,11 @@
-import {  Fab, Tooltip } from '@mui/material'
+import {  Box, Fab, Modal, Tooltip, Typography } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add';
 
 import React from 'react'
+import { useState } from 'react';
 
 const Addpost = () => {
+    const[Isopen,setIsopen]=useState(false)
   return (
     <>       
     <Tooltip title="Add Post" sx={{position:"fixed",left:"22px",bottom:"22px"}}>   
