@@ -1,15 +1,15 @@
-import { Box, Fab } from '@mui/material'
+import { Box, Fab, Tooltip } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add';
 
 import React from 'react'
 
 const Addpost = () => {
   return (
-    <Box>   
+    <Tooltip title="Add Post">   
     <Fab color="primary" aria-label="add">
     <AddIcon />
   </Fab>
-  </Box>
+  </Tooltip>
   )
 }
 
