@@ -51,7 +51,7 @@ const Addpost = () => {
             padding: "22px",
             borderRadius: "6px",
             
-            position:"fixed", width:"377px" , bgcolor:theme.palette.background.default}}>
+            position:"fixed", width:{xs:'97%',sm:377} , bgcolor:theme.palette.background.default}}>
         <Typography
             sx={{ textAlign: "center", mb: 1 }}
             variant="h6"
