@@ -18,15 +18,16 @@ function App() {
       : "dark"
   );
   const theme = useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
+  const[showlist,setshowlist]=useState("none")
   return (
     <ThemeProvider theme={theme}>
     <CssBaseline />
-<AppBarr/>
+<AppBarr showlist={setshowlist} setshowlist={setshowlist}/>
     <div>
 
 
 <Stack direction="row">    
-<MyList setmyMOde={setmyMOde} theme={theme}/>
+<MyList setmyMOde={setmyMOde} theme={theme} showlist={showlist} setshowlist={setshowlist}/>
 <Posts/>
 <Rightbar theme={theme}/>
  </Stack>

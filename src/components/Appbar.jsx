@@ -58,7 +58,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-const AppBarr = () => {
+const AppBarr = ({,showlist,setshowlist}) => {
   const refMenuMobile = useRef(null);
   const [showMobileMenu, setshowMobileMenu] = useState(false);
 
@@ -141,7 +141,10 @@ const AppBarr = () => {
 
       <AppBar position="sticky">
         <Toolbar>
-          <IconButton
+          <IconButton onClick={()=>{
+setshowlist("block")
+
+          }}
             size="large"
             edge="start"
             color="inherit"

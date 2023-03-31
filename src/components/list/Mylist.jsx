@@ -70,7 +70,8 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     borderRadius: 20 / 2,
   },
 }));
-const MyList = ({setmyMOde,theme}) => {
+
+const MyList = ({setmyMOde,theme,showlist,setshowlist}) => {
   const mylist = [
     { title: "Homepage", icon: <Home /> },
     { title: "Pages", icon: <Article /> },
@@ -81,7 +82,7 @@ const MyList = ({setmyMOde,theme}) => {
     { title: "Profile", icon: <AccountBox /> },
   ];
   return (
-    <Box sx={{ bgcolor : theme.palette.favcolor.main , flexGrow: "2" ,display:{xs:"none",md:"block"}  }}>
+    <Box sx={{ bgcolor : theme.palette.favcolor.main , flexGrow: "2" ,display:{xs:"showlist",md:"block"}  }}>
       <List sx={{position:"fixed"}}>
         {mylist.map((item) => {
           return (

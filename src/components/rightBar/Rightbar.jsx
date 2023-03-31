@@ -28,7 +28,7 @@ const itemData = [
   ];
 const Rightbar = ({theme}) => {
   return (
-   <Box sx={{  display: showLG,  bgcolor : theme.palette.favcolor.main}} flexGrow={2}>
+   <Box sx={{  display: showLG,  pl:4,   bgcolor : theme.palette.favcolor.main}} flexGrow={2}>
 <Typography variant="body1" >
     Online Frinds
 </Typography>
