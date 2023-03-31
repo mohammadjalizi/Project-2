@@ -115,7 +115,7 @@ const MyList = ({setmyMOde,theme,showlist,setshowlist}) => {
        sx={{ m: 1 }} defaultChecked />} 
      
         </ListItemIcon>
-        <ListItemText  primary={  theme.palette.mode} />
+        <ListItemText  primary={  ` ${theme.palette.mode}  mode`} />
       
       </ListItem>
 
