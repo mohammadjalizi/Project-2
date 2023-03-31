@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box, ImageList, ImageListItem, Typography } from '@mui/material'
 import Avatar from '@mui/material/Avatar';
 import AvatarGroup from '@mui/material/AvatarGroup';
 
@@ -17,9 +17,9 @@ const itemData = [
       title: "Camera",
     },
   ];
-const Rightbar = () => {
+const Rightbar = ({theme}) => {
   return (
-   <Box  flexGrow={2}>
+   <Box sx={{ bgcolor : theme.palette.favcolor.main}} flexGrow={2}>
 <Typography variant="body1" >
     Online Frinds
 </Typography>
@@ -67,7 +67,7 @@ const Rightbar = () => {
             />
           </ImageListItem>
         ))}
-      </ImageList
+      </ImageList>
 
 <Typography variant="body1" >
 Letest Conversation

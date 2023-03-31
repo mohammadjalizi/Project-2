@@ -28,7 +28,7 @@ function App() {
 <Stack direction="row">    
 <MyList setmyMOde={setmyMOde} theme={theme}/>
 <Posts/>
-<Rightbar/>
+<Rightbar theme={theme}/>
  </Stack>
     </div>
     </ThemeProvider>
