@@ -28,7 +28,13 @@ const itemData = [
   ];
 const Rightbar = ({theme}) => {
   return (
-   <Box sx={{  display: showLG,  pl:4,   bgcolor : theme.palette.favcolor.main}} flexGrow={2}>
+   <Box sx={{  
+    
+    minWidth:"516px",
+    
+    display: showLG,  pl:4,   bgcolor : theme.palette.favcolor.main}} flexGrow={2}>
+
+    <Box sx={{  position:"fixed"  }}>      
 <Typography variant="body1" >
     Online Frinds
 </Typography>
@@ -154,6 +160,7 @@ Letest Conversation
           />
         </ListItem>
       </List>
+      </Box>
    </Box>
   )
 }
