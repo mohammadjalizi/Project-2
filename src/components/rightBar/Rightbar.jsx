@@ -12,7 +12,7 @@ const Rightbar = () => {
 </Typography>
 
 <Typography variant="body1" >
-    Online Frinds
+Letest Conversation
 </Typography>
 
 
