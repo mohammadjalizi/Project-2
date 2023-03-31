@@ -3,6 +3,8 @@ import Avatar from '@mui/material/Avatar';
 import AvatarGroup from '@mui/material/AvatarGroup';
 
 import React from 'react'
+
+const showLG = { xs: "none", lg: "block" }
 const itemData = [
     {
       img: "https://images.pexels.com/photos/2995336/pexels-photo-2995336.jpeg",
@@ -19,7 +21,7 @@ const itemData = [
   ];
 const Rightbar = ({theme}) => {
   return (
-   <Box sx={{ bgcolor : theme.palette.favcolor.main}} flexGrow={2}>
+   <Box sx={{  display: showLG,  bgcolor : theme.palette.favcolor.main}} flexGrow={2}>
 <Typography variant="body1" >
     Online Frinds
 </Typography>

@@ -81,7 +81,7 @@ const MyList = ({setmyMOde,theme}) => {
     { title: "Profile", icon: <AccountBox /> },
   ];
   return (
-    <Box sx={{ bgcolor : theme.palette.favcolor.main , flexGrow: "1.1" ,display:{xs:"none",md:"block"}  }}>
+    <Box sx={{ bgcolor : theme.palette.favcolor.main , flexGrow: "2" ,display:{xs:"none",md:"block"}  }}>
       <List sx={{position:"fixed"}}>
         {mylist.map((item) => {
           return (
