@@ -14,12 +14,14 @@ const Addpost = () => {
   </Fab>
   </Tooltip>
   <Modal
-        open={open}
-        onClose={handleClose}
+        open={Isopen}
+        onClose={()=>{
+            setIsopen(false)
+        }}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box sx={{}}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Text in a modal
           </Typography>
