@@ -28,7 +28,15 @@ const Addpost = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={{position:"fixed", width:"377px" , bgcolor:theme.palette.background.default}}>
+        <Box sx={{
+            
+            top: "50%",
+            left: "50%",
+            transform: " translate(-50%, -50%)",
+            padding: "22px",
+            borderRadius: "6px",
+            
+            position:"fixed", width:"377px" , bgcolor:theme.palette.background.default}}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Text in a modal
           </Typography>
