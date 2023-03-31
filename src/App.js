@@ -1,6 +1,7 @@
 // @ts-ignore
 
 import { createTheme, Button, ThemeProvider, CssBaseline, Typography, Stack } from "@mui/material";
+import Addpost from "components/addpost/Addpost";
 import AppBarr from "components/Appbar";
 import MyList from "components/list/Mylist";
 import Posts from "components/Posts/Posts";
@@ -32,6 +33,7 @@ function App() {
 <Rightbar theme={theme}/>
  </Stack>
     </div>
+    <Addpost/>
     </ThemeProvider>
   );
 }
