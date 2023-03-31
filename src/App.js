@@ -22,7 +22,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <CssBaseline />
-<AppBarr showlist={setshowlist} setshowlist={setshowlist}/>
+<AppBarr showlist={showlist} setshowlist={setshowlist}/>
     <div>
 
 

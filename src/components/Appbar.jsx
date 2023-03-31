@@ -142,12 +142,9 @@ const AppBarr = ({showlist,setshowlist}) => {
       <AppBar position="sticky">
         <Toolbar>
           <IconButton onClick={()=>{
-            if(showlist==="none"){
-              setshowlist("block")
-            }else{
-              setshowlist("none")
-            }
 
+showlist==="none"?    setshowlist("block"):    setshowlist("none")
+            
 
           }}
             size="large"
