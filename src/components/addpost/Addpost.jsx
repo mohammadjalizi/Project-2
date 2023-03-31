@@ -1,9 +1,24 @@
-import {  Box, Fab, Modal, Tooltip, Typography, useTheme } from '@mui/material'
-import AddIcon from '@mui/icons-material/Add';
 
-import React from 'react'
-import { useState } from 'react';
-
+import React, { useState } from "react";
+import Box from "@mui/material/Box";
+import Fab from "@mui/material/Fab";
+import AddIcon from "@mui/icons-material/Add";
+import Tooltip from "@mui/material/Tooltip";
+import Modal from "@mui/material/Modal";
+import {
+  Avatar,
+  Button,
+  ButtonGroup,
+  Stack,
+  TextField,
+  Typography,
+  useTheme,
+} from "@mui/material";
+import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
+import VideoCameraBackIcon from "@mui/icons-material/VideoCameraBack";
+import PersonAddIcon from "@mui/icons-material/PersonAdd";
+import ImageIcon from "@mui/icons-material/Image";
+import DateRangeIcon from "@mui/icons-material/DateRange";
 const Addpost = () => {
     const theme=useTheme()
     const[Isopen,setIsopen]=useState(false)
@@ -51,6 +66,31 @@ const Addpost = () => {
             />
             <Typography variant="body1">Layla Hassan</Typography>
           </Stack>
+          <TextField
+            sx={{ width: "100%", mt: "22px" }}
+            multiline
+            rows={3}
+            placeholder="What is in your mind ..."
+            variant="standard"
+          />
+
+          <Stack direction={"row"} spacing={1} my={3}>
+            <EmojiEmotionsIcon color="primary" />
+            <ImageIcon color="secondary" />
+            <VideoCameraBackIcon color="success" />
+            <PersonAddIcon color="error" />
+          </Stack>
+
+          <ButtonGroup
+            sx={{ width: "100%" }}
+            variant="contained"
+            aria-label="outlined primary button group"
+          >
+            <Button sx={{ flexGrow: 1 }}>Post</Button>
+            <Button>
+              <DateRangeIcon />
+            </Button>
+          </ButtonGroup>
         </Box>  
       </Modal>
 
