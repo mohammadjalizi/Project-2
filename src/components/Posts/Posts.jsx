@@ -27,28 +27,28 @@ const Posts = () => {
   const myCards = [
     {
       letter: "K",
-      color: "royalblue",
+      color: "#053ea8",
       userName: "mohammadjalizi",
       imgLink:
         "https://images.pexels.com/photos/3480792/pexels-photo-3480792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       letter: "A",
-      color: "purple",
+      color: "#a020f0",
       userName: "do3aa Hassan",
       imgLink:
         "https://images.pexels.com/photos/1549280/pexels-photo-1549280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
       letter: "N",
-      color: "teal",
+      color: "#008080",
       userName: "Alaa Hassan",
       imgLink:
         "https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       letter: "M",
-      color: "royalblue",
+      color: "#053ea8",
       userName: "Walaa Hassan",
       imgLink:
         "https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&w=600",
