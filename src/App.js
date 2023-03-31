@@ -28,7 +28,11 @@ function App() {
 
 
 <Stack divider={<Divider orientation="vertical" flexItem />} direction="row">    
-<MyList setmyMOde={setmyMOde} theme={theme} showlist={showlist} setshowlist={setshowlist}/>
+
+
+<MyList 
+{...{setmyMOde,theme,showlist,setshowlist}}
+/>
 <Posts/>
 <Rightbar theme={theme}/>
  </Stack>

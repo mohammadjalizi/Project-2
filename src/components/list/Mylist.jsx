@@ -112,7 +112,7 @@ const MyList = ({setmyMOde,theme,showlist,setshowlist}) => {
           setmyMOde(theme.palette.mode === "light" ? "dark" : "light"); 
 
         }}
-       sx={{ m: 1 }} defaultChecked />} 
+       sx={{ mt: 1,mr:1 }} defaultChecked />} 
      
         </ListItemIcon>
         <ListItemText  primary={  ` ${theme.palette.mode}  mode`} />
