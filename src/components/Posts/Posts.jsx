@@ -46,7 +46,7 @@ const Posts = () => {
             "https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&w=600",
         },
       ];    
-      const element = useRef(null);
+      const [anchorEl, setAnchorEl] = React.useState(null);
       const [cardmenu, setcardmenu] = useState(false);
     
       const refMenuBiggerScreen = useRef(null);
