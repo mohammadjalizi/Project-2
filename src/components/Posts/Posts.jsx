@@ -75,7 +75,7 @@ const Posts = () => {
     <Box sx={{ flexGrow: "3" }}>
       {myCards.map((item) => {
         return (
-          <Card sx={{ maxWidth: 444, mx: "auto", my: 5 }}>
+          <Card  key={item.imgLink}  sx={{ maxWidth: 444, mx: "auto", my: 5 }}>
             <CardHeader
               avatar={
                 <Avatar sx={{ color:theme.palette.getContrastText(item.color)  ,bgcolor: item.color }} aria-label="recipe">
