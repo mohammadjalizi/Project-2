@@ -1,10 +1,11 @@
-import {  Box, Fab, Modal, Tooltip, Typography } from '@mui/material'
+import {  Box, Fab, Modal, Tooltip, Typography, useTheme } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add';
 
 import React from 'react'
 import { useState } from 'react';
 
 const Addpost = () => {
+    const theme=useTheme()
     const[Isopen,setIsopen]=useState(false)
   return (
     <>       
@@ -16,7 +17,10 @@ const Addpost = () => {
     <AddIcon />
   </Fab>
   </Tooltip>
-  <Modal
+  <Modal sx={{
+bgcolor:theme.palette.background.default
+
+  }}
         open={Isopen}
         onClose={()=>{
             setIsopen(false)
