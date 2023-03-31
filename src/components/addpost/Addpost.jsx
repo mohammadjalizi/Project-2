@@ -18,7 +18,7 @@ const Addpost = () => {
   </Fab>
   </Tooltip>
   <Modal sx={{
-bgcolor:theme.palette.background.default
+
 
   }}
         open={Isopen}
@@ -28,14 +28,14 @@ bgcolor:theme.palette.background.default
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={{}}>
+        <Box sx={{position:"fixed", width:"377px" , bgcolor:theme.palette.background.default}}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Text in a modal
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
           </Typography>
-        </Box>
+        </Box>  
       </Modal>
 
   </>
