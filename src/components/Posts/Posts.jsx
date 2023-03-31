@@ -78,7 +78,7 @@ const Posts = () => {
           <Card sx={{ maxWidth: 444, mx: "auto", my: 5 }}>
             <CardHeader
               avatar={
-                <Avatar sx={{ bgcolor: item.color }} aria-label="recipe">
+                <Avatar sx={{ color:theme.palette.getContrastText(item.color)  ,bgcolor: item.color }} aria-label="recipe">
                   {item.letter}
                 </Avatar>
               }
