@@ -37,12 +37,20 @@ const Addpost = () => {
             borderRadius: "6px",
             
             position:"fixed", width:"377px" , bgcolor:theme.palette.background.default}}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+        <Typography
+            sx={{ textAlign: "center", mb: 1 }}
+            variant="h6"
+            component="h2"
+          >
+            Create a post
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
+          <Stack alignItems="center" direction="row">
+            <Avatar
+              sx={{ mr: "13px" }}
+              src="https://i.pinimg.com/474x/1b/61/45/1b614533bde5ad1760664fd6c35dd895.jpg"
+            />
+            <Typography variant="body1">Layla Hassan</Typography>
+          </Stack>
         </Box>  
       </Modal>
 
