@@ -1,6 +1,6 @@
 // @ts-ignore
 
-import { createTheme, Button, ThemeProvider, CssBaseline, Typography, Stack } from "@mui/material";
+import { createTheme, Button, ThemeProvider, CssBaseline, Typography, Stack, Divider } from "@mui/material";
 import Addpost from "components/addpost/Addpost";
 import AppBarr from "components/Appbar";
 import MyList from "components/list/Mylist";
@@ -27,7 +27,7 @@ function App() {
     <div>
 
 
-<Stack direction="row">    
+<Stack divider={<Divider orientation="vertical" flexItem />} direction="row">    
 <MyList setmyMOde={setmyMOde} theme={theme} showlist={showlist} setshowlist={setshowlist}/>
 <Posts/>
 <Rightbar theme={theme}/>
