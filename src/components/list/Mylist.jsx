@@ -82,7 +82,7 @@ const MyList = ({setmyMOde,theme,showlist,setshowlist}) => {
     { title: "Profile", icon: <AccountBox /> },
   ];
   return (
-    <Box sx={{ bgcolor : theme.palette.favcolor.main , flexGrow: "2" ,display:{xs:showlist,md:"block"}  }}>
+    <Box sx={{ position:"fixed",zIndex:"5",left:'0',top:"0",bottom:"0" , minWidth:"222px" , bgcolor : theme.palette.favcolor.main , flexGrow: "2" ,display:{xs:showlist,md:"block"}  }}>
       <List sx={{position:"fixed"}}>
         {mylist.map((item) => {
           return (
