@@ -3,7 +3,7 @@ import React from 'react'
 
 const Rightbar = () => {
   return (
-   <Box>
+   <Box  flexGrow={1}>
 <Typography variant="body1" >
     Online Frinds
 </Typography>

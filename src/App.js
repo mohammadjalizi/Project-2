@@ -4,6 +4,7 @@ import { createTheme, Button, ThemeProvider, CssBaseline, Typography, Stack } fr
 import AppBarr from "components/Appbar";
 import MyList from "components/list/Mylist";
 import Posts from "components/Posts/Posts";
+import Rightbar from "components/rightBar/Rightbar";
 
 import getDesignTokens from "mystyle/Mytheme";
 import { useMemo, useState } from "react";
@@ -27,7 +28,7 @@ function App() {
 <Stack direction="row">    
 <MyList setmyMOde={setmyMOde} theme={theme}/>
 <Posts/>
-<Typography sx={{flexGrow:"2"}} variant="body1">112</Typography>
+<Rightbar/>
  </Stack>
     </div>
     </ThemeProvider>
