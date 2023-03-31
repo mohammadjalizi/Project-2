@@ -91,7 +91,10 @@ return(
         </Avatar>
       }
       action={
-        <IconButton   ref={element}   aria-label="settings">
+        <IconButton onClick={()=>{
+          setshowBiggerScreenMenu(true)
+
+        }}   ref={element}   aria-label="settings">
           <MoreVertIcon />
         </IconButton>
       }
