@@ -1,8 +1,15 @@
-import { Box, ImageList, ImageListItem, Typography } from '@mui/material'
-import Avatar from '@mui/material/Avatar';
-import AvatarGroup from '@mui/material/AvatarGroup';
+import { Box, Typography } from "@mui/material";
+import React from "react";
+import Avatar from "@mui/material/Avatar";
+import AvatarGroup from "@mui/material/AvatarGroup";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import Divider from "@mui/material/Divider";
+import ListItemText from "@mui/material/ListItemText";
+import ListItemAvatar from "@mui/material/ListItemAvatar";
 
-import React from 'react'
 
 const showLG = { xs: "none", lg: "block" }
 const itemData = [
@@ -74,8 +81,79 @@ const Rightbar = ({theme}) => {
 <Typography variant="body1" >
 Letest Conversation
 </Typography>
-
-
+<List sx={{ width: "100%", maxWidth: 488, bgcolor: "background.paper" }}>
+        <ListItem alignItems="flex-start">
+          <ListItemAvatar>
+            <Avatar
+              alt="Remy Sharp"
+              src="https://images.pexels.com/photos/7365020/pexels-photo-7365020.jpeg"
+            />
+          </ListItemAvatar>
+          <ListItemText
+            primary="Brunch this weekend?"
+            secondary={
+              <Typography
+                sx={{ display: "inline" }}
+                component="span"
+                variant="body2"
+                color="text.primary"
+              >
+                Ali Connors — I'll be in your neighborhood doing errands
+              </Typography>
+            }
+          />
+        </ListItem>
+        <Divider variant="inset" component="li" />
+        <ListItem alignItems="flex-start">
+          <ListItemAvatar>
+            <Avatar
+              alt="Travis Howard"
+              src="https://images.pexels.com/photos/8669022/pexels-photo-8669022.jpeg"
+            />
+          </ListItemAvatar>
+          <ListItemText
+            primary="Summer BBQ"
+            secondary={
+              <React.Fragment>
+                <Typography
+                  sx={{ display: "inline" }}
+                  component="span"
+                  variant="body2"
+                  color="text.primary"
+                >
+                  to Scott, Alex, Jennifer
+                </Typography>
+                {" — Wish I could come"}
+              </React.Fragment>
+            }
+          />
+        </ListItem>
+        <Divider variant="inset" component="li" />
+        <ListItem alignItems="flex-start">
+          <ListItemAvatar>
+            <Avatar
+              alt="Cindy Baker"
+              src="https://images.pexels.com/photos/8101622/pexels-photo-8101622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+          </ListItemAvatar>
+          <ListItemText
+            primary="Oui Oui"
+            secondary={
+              <React.Fragment>
+                <Typography
+                  sx={{ display: "inline" }}
+                  component="span"
+                  variant="body2"
+                  color="text.primary"
+                >
+                  Sandra Adams
+                </Typography>
+                {" — Do you have Paris recommendations?"}
+              </React.Fragment>
+            }
+          />
+        </ListItem>
+      </List>
    </Box>
   )
 }
