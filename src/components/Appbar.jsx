@@ -58,7 +58,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-const AppBarr = ({,showlist,setshowlist}) => {
+const AppBarr = ({showlist,setshowlist}) => {
   const refMenuMobile = useRef(null);
   const [showMobileMenu, setshowMobileMenu] = useState(false);
 
