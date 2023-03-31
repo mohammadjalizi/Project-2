@@ -151,7 +151,7 @@ showlist==="none"?    setshowlist("block"):    setshowlist("none")
             edge="start"
             color="inherit"
             aria-label="open drawer"
-            sx={{ mr: 2 ,display:{xs:"block",md:"none"} }}
+            sx={{ mr: 2 ,display:{xs:"flex",md:"none"} }}
           >
             <MenuIcon />
           </IconButton>
