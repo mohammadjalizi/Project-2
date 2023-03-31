@@ -3,7 +3,20 @@ import Avatar from '@mui/material/Avatar';
 import AvatarGroup from '@mui/material/AvatarGroup';
 
 import React from 'react'
-
+const itemData = [
+    {
+      img: "https://images.pexels.com/photos/2995336/pexels-photo-2995336.jpeg",
+      title: "Breakfast",
+    },
+    {
+      img: "https://images.pexels.com/photos/3933239/pexels-photo-3933239.jpeg",
+      title: "Burger",
+    },
+    {
+      img: "https://images.pexels.com/photos/3934003/pexels-photo-3934003.jpeg",
+      title: "Camera",
+    },
+  ];
 const Rightbar = () => {
   return (
    <Box  flexGrow={2}>
@@ -37,6 +50,24 @@ const Rightbar = () => {
 <Typography variant="body1" >
    Latest Photo
 </Typography>
+<ImageList
+        gap={10}
+        sx={{ width: 500, height: 160, overflowY: "hidden" }}
+        cols={3}
+        rowHeight={99}
+      >
+        {itemData.map((item) => (
+          <ImageListItem key={item.img}>
+            <img
+              style={{ borderRadius: "5px" }}
+              src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+              srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+              alt={item.title}
+              loading="lazy"
+            />
+          </ImageListItem>
+        ))}
+      </ImageList
 
 <Typography variant="body1" >
 Letest Conversation
